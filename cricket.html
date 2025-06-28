@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Game</title>
+    <link rel="stylesheet" href="cricket.css">
+</head>
+<body>
+    <div class="rules">
+        <ul class="uu"> <p>This game is between you and computer</p>
+            <li class="l"><h1>RULE 1: </h1>chose your turn.</li>
+            <li class="l"><h1>RULE 2: </h1>If you and computer choses same turn then its a TIE</li>
+            <li class="l"><h1>RULE 3: </h1>If one choses bat and other  choses ball then one with bat wins</li>
+             <li class="l"><h1>RULE 4: </h1>If one choses bat and other  choses stump then one with stump wins</li>
+               <li class="l"><h1>RULE 5: </h1>If one choses ball and other  choses stump then one with ball wins</li>
+        </ul>
+    </div>
+     <div class="body">
+    <div class="heading">
+        <h1>  Bat Ball Stump Game </h1>
+    </div>
+    <div class="buttons">
+        <button class="b1" onclick="
+            // alert('bat is chosen');
+            const userchosenmsg='Bat';
+            let comp;
+            let computercohosennumber = Math.random()*3;
+             if(computercohosennumber>0 && computercohosennumber<=1){
+                   comp='Bat';
+             } else if(computercohosennumber>1 && computercohosennumber<=2){
+                comp='Ball';
+             }
+             else {
+comp='Stump';
+             }
+             let result;
+             if(comp === userchosenmsg){
+                 result='tie';
+             }
+             else if(comp === 'Ball'){
+                result='user won!!'
+             }
+             else if(comp === 'Stump'){
+                result='computer Won!!'
+             }
+alert(`User has chosen ${userchosenmsg} and computer has chosen ${comp} and resut is ${result}`);
+            
+            
+            
+            
+            
+            ">Bat</button>
+         <button class="b1" onclick="
+           const user='Ball';
+            let compp;
+            let computerrcohosennumber = Math.random()*3;
+             if(computerrcohosennumber>0 && computerrcohosennumber<=1){
+                   compp='Bat';
+             } else if(computerrcohosennumber>1 && computerrcohosennumber<=2){
+                compp='Ball';
+             }
+             else {
+compp='Stump';
+             }
+             let resultt;
+             if(compp === user){
+                 resultt='tie';
+             }
+             else if(compp === 'Bat'){
+                resultt='computer won!!'
+             }
+             else if(compp === 'Stump'){
+                resultt='user Won!!'
+             }
+alert(`User has chosen ${user} and computer has chosen ${compp} and resut is ${resultt}`);
+            
+         
+         
+         
+         
+         
+         ">Ball</button>
+          <button class="b1" onclick="
+            const u='Stump';
+            let c;
+            let computercohosennumberr = Math.random()*3;
+             if(computercohosennumberr>0 && computercohosennumberr<=1){
+                   c='Bat';
+             } else if(computercohosennumberr>1 && computercohosennumberr<=2){
+                c='Ball';
+             }
+             else {
+c='Stump';
+             }
+             let r;
+             if(c === u){
+                 r='tie';
+             }
+             else if(c === 'Ball'){
+                r='computer won!!'
+             }
+             else if(c === 'Bat'){
+                r='user Won!!'
+             }
+alert(`User has chosen ${u} and computer has chosen ${c} and resut is ${r}`);
+            
+          
+          
+          
+          ">Stump</button>
+    </div> 
+</div>
+</body>
+</html>
