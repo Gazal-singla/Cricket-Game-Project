@@ -22,9 +22,66 @@
     </div>
     <div class="buttons">
         <button class="b1" onclick="
-            // alert('bat is chosen');
-            const userchosenmsg='Bat';
-            let comp;
+          generatemsg();
+             let result;
+             if(comp === 'Bat'){
+                 result='tie';
+             }
+             else if(comp === 'Ball'){
+                result='user won!!'
+             }
+             else if(comp === 'Stump'){
+                result='computer Won!!'
+             }
+alert(`User has chosen Bat and computer has chosen ${comp} and resut is ${result}`);
+            
+            
+            
+            
+            
+            ">Bat</button>
+         <button class="b1" onclick="
+         generatemsg();
+             
+             if(comp === 'Ball'){
+                 result='tie';
+             }
+             else if(comp === 'Bat'){
+                result='computer won!!'
+             }
+             else if(comp === 'Stump'){
+                result='user Won!!'
+             }
+alert(`User has chosen Ball and computer has chosen ${comp} and resut is ${result}`);
+            
+         
+         
+         
+         
+         
+         ">Ball</button>
+          <button class="b1" onclick="
+        generatemsg();
+             if(comp === 'Stump'){
+                 result='tie';
+             }
+             else if(comp === 'Ball'){
+                result='computer won!!'
+             }
+             else if(comp === 'Bat'){
+                result='user Won!!'
+             }
+alert(`User has chosen Stump and computer has chosen ${comp} and resut is ${result}`);
+            
+          
+          
+          
+          ">Stump</button>
+    </div> 
+</div>
+<script>
+   let comp;
+   function generatemsg (){
             let computercohosennumber = Math.random()*3;
              if(computercohosennumber>0 && computercohosennumber<=1){
                    comp='Bat';
@@ -34,82 +91,7 @@
              else {
 comp='Stump';
              }
-             let result;
-             if(comp === userchosenmsg){
-                 result='tie';
-             }
-             else if(comp === 'Ball'){
-                result='user won!!'
-             }
-             else if(comp === 'Stump'){
-                result='computer Won!!'
-             }
-alert(`User has chosen ${userchosenmsg} and computer has chosen ${comp} and resut is ${result}`);
-            
-            
-            
-            
-            
-            ">Bat</button>
-         <button class="b1" onclick="
-           const user='Ball';
-            let compp;
-            let computerrcohosennumber = Math.random()*3;
-             if(computerrcohosennumber>0 && computerrcohosennumber<=1){
-                   compp='Bat';
-             } else if(computerrcohosennumber>1 && computerrcohosennumber<=2){
-                compp='Ball';
-             }
-             else {
-compp='Stump';
-             }
-             let resultt;
-             if(compp === user){
-                 resultt='tie';
-             }
-             else if(compp === 'Bat'){
-                resultt='computer won!!'
-             }
-             else if(compp === 'Stump'){
-                resultt='user Won!!'
-             }
-alert(`User has chosen ${user} and computer has chosen ${compp} and resut is ${resultt}`);
-            
-         
-         
-         
-         
-         
-         ">Ball</button>
-          <button class="b1" onclick="
-            const u='Stump';
-            let c;
-            let computercohosennumberr = Math.random()*3;
-             if(computercohosennumberr>0 && computercohosennumberr<=1){
-                   c='Bat';
-             } else if(computercohosennumberr>1 && computercohosennumberr<=2){
-                c='Ball';
-             }
-             else {
-c='Stump';
-             }
-             let r;
-             if(c === u){
-                 r='tie';
-             }
-             else if(c === 'Ball'){
-                r='computer won!!'
-             }
-             else if(c === 'Bat'){
-                r='user Won!!'
-             }
-alert(`User has chosen ${u} and computer has chosen ${c} and resut is ${r}`);
-            
-          
-          
-          
-          ">Stump</button>
-    </div> 
-</div>
+   }
+</script>
 </body>
 </html>
